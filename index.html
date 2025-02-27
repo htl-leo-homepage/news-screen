@@ -1,1 +1,45 @@
-Hello world
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aktuelle Themen</title>
+    <link rel="icon" type="image/png" href="./utils/htl-logo.png">
+    <link rel="stylesheet" href="./utils/style.css">
+    <style>
+        .topics {
+            display: none; /* Alle Bilder sind zunächst unsichtbar */
+        }
+
+        .topics.active {
+            display: block; /* Nur das Bild mit der 'active' Klasse wird angezeigt */
+        }
+    </style>
+</head>
+<body>
+    <!-- Gezeigte Seiten -->
+    <div class="container">
+        <img class="topics active" src="./images/ILB.png" alt="">
+        <img class="topics" src="./images/GenderAndDiversity.png" alt="">
+        <img class="topics" src="./images/MentalHealthTeam.png" alt="">
+        <img class="topics" src="./images/Nachhilfe.png" alt="">
+        <img class="topics" src="./images/Peers.png" alt="">
+        <img class="topics" src="./images/Psychologen.png" alt="">
+        <img class="topics" src="./images/Schwammerltalk.png" alt="">
+        <img class="topics" src="./images/SocialMedia.png" alt="">
+    </div>
+
+    <script>
+        let topics = document.getElementsByClassName('topics');
+        let index = 0;
+
+        function switchTopics() {
+            topics[index].classList.remove("active");
+            index = (index + 1) % topics.length;
+            topics[index].classList.add("active");
+        }
+
+        setInterval(switchTopics, 5000);
+    </script>
+</body>
+</html>
