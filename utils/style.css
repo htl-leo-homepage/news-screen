@@ -1,32 +1,32 @@
-body, html {
+/*** allgemeine einstellungen ***/
+body {
     margin: 0;
-    padding: 0;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
-.container {
+/*** slider ***/
+.splide {
     width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
-.topic {
+.splide__slide img {
     width: 100%;
-    height: 100%;
-    border: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.s ease-in-out; /** übergang festlegen **/
+    object-fit: contain;
 }
 
-.topic.active {
-    opacity: 1;
-    z-index: 1;
+.my-slider-progress {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #ccc;
+    z-index: 1000;
+}
+
+.my-slider-progress-bar {
+    background: black;
+    height: 100%;
+    width: 0%;
+    transition: width 5s linear;
 }
