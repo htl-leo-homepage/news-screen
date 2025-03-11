@@ -1,6 +1,7 @@
 /*** allgemeine einstellungen ***/
 body {
     margin: 0;
+    overflow: hidden;
 }
 
 /*** slider ***/
@@ -28,5 +29,5 @@ body {
     background: black;
     height: 100%;
     width: 0%;
-    transition: width 5s linear;
+    transition: width 2s linear; 
 }
