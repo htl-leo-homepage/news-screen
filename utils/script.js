@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var slideDuration = 5000; // Dauer pro Slide (5 Sekunden)
-    var transitionSpeed = 500; // Übergangsgeschwindigkeit (500ms)
+    var slideDuration = 20000; // Dauer pro Slide 
+    var transitionSpeed = 500; // Übergangsgeschwindigkeit 
     var slides = document.querySelectorAll('.splide__slide').length;
 
     var splide = new Splide('.splide', {
