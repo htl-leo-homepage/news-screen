@@ -17,7 +17,6 @@ body {
   position: relative;
 }
 
-/* Slides */
 .splide__slide img {
   display: block;
   width: 100%;
@@ -51,7 +50,7 @@ body {
 }
 
 .splide__arrow.splide__arrow--prev {
-  left: 2vw; /* ganz links am Rand */
+  left: 2vw;
   background: rgba(0, 0, 0, 0.6);
 }
 
