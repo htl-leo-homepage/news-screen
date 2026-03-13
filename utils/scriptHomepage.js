@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     perPage: 1,
     focus: 'center',
     gap: '2rem',
-    padding: { left: '20%', right: '20%' }, 
+    padding: { left: '20%', right: '20%' },
     autoplay: true,
     interval: 20000,
     arrows: true,
